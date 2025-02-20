@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Budget Planner</h1>
+    </header>
+    <main>
+        <section id="summary">
+            <h2>Financial Summary</h2>
+            <p>Total Balance: <span id="balance">$0.00</span></p>
+            <p>Total Income: <span id="income">$0.00</span></p>
+            <p>Total Expenses: <span id="expenses">$0.00</span></p>
+        </section>
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <ul id="transaction-list"></ul>
+        </section>
+        <section id="add-transaction">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
